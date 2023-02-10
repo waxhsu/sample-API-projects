@@ -14,8 +14,11 @@ function getFetch(){
         document.querySelector('span').innerText = data.explanation
 
 
-
+        if (data.media_type == 'image') {
         document.querySelector('img').src = data.hdurl
+      } else if (data.media_type == 'video'){
+        document.querySelector('iframe').src = data.url
+      }
 
 
 
