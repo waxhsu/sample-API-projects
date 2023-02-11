@@ -19,7 +19,7 @@ function getFetch(){
           document.querySelector('#typeTwo').innerText = data.types[1].type.name
         }
         
-        document.querySelector('img').src = data.sprites.other.dream_world.front_default
+        document.querySelector('img').src = data.sprites.other['official-artwork'].front_default
 
 
       })
